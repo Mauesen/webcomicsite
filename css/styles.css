@@ -48,7 +48,7 @@
 .top-4__img{
 
     transition: transform .3s;
-    border-radius: 20px;
+    border-radius: 30px;
     margin: 5px 0;
 }
 
@@ -106,6 +106,18 @@
     min-height: 80%;
     max-width: 80%;
     
+}
+
+@media (max-width: 770px) { 
+
+    .reseñas__video{
+
+        display: flex;
+        flex-direction: column-reverse;
+        
+
+    }
+
 }
 
 
