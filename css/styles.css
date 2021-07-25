@@ -1,276 +1,99 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-
+@charset "UTF-8";
+/* General */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.title{
-
-    color: whitesmoke;
-    padding: 5px;
-    border-radius: 5px;
+section {
+  padding: 15px 0;
 }
 
-.text-uppercase{
-
-    color: whitesmoke;
+.titulo {
+  color: whitesmoke;
+  padding: 5px;
+  border-radius: 5px;
+  text-align: center;
+  background-color: #343a40;
 }
 
-.carousel-inner{
-    max-height: 600px;
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* RANKING */
-
-.ranking{
-    
-    background: linear-gradient(to bottom, white, rgba(214, 214, 214, 0.986));
-   
+/* RANKING SEMANAL*/
+#ranking_semanal {
+  background-color: #f2f2f2;
+  border-bottom: 1px solid #cccccc;
+}
+#ranking_semanal .top-1 img {
+  transition: transform 0.3s;
+  border-radius: 20px;
+}
+#ranking_semanal .top-1 img:hover {
+  transform: scale(1.05);
+}
+#ranking_semanal .top-4 img {
+  transition: transform 0.3s;
+  border-radius: 30px;
+  margin: 5px 0;
+}
+#ranking_semanal .top-4 img:hover {
+  transform: scale(1.05);
+}
+#ranking_semanal .card {
+  background: none;
+  border: none;
+}
+#ranking_semanal .card .card-header {
+  background: none;
+  border: none;
 }
 
-.top-1__img{
-
-    transition: transform .3s;
-    border-radius: 20px;
-    
+/* NOVEDADES */
+#novedades {
+  background-color: #e6e6e6;
+  border-bottom: 1px solid #cccccc;
+}
+#novedades .card {
+  background: none;
+  border: none;
+}
+#novedades .card .card-header {
+  background: none;
+  border: none;
+}
+#novedades img {
+  transition: transform 0.3s;
+  border-radius: 20px;
+}
+#novedades img:hover {
+  transform: scale(1.03);
 }
 
+/* RESEÑAS RECOMENDADAS*/
+#reseñas_recomendadas {
+  background-color: #f2f2f2;
+  border-bottom: 1px solid #cccccc;
+  /*     p{
 
+          text-align: center;
+          min-height: 80%;
+          max-width: 80%;
 
-.top-1__img:hover{
-
-    transform: scale(1.05);
+      } */
+}
+#reseñas_recomendadas img {
+  border-radius: 20px;
+}
+@media (max-width: 770px) {
+  #reseñas_recomendadas .reseñas__video {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
 
-
-
-.top-4__img{
-
-    transition: transform .3s;
-    border-radius: 30px;
-    margin: 5px 0;
-}
-
-.top-4__img:hover{
-
-    transform: scale(1.05);
-
-}
-
-
-/* RECOMENDANDOS */
-
-.recomendados{
-
-    background: linear-gradient(to bottom, rgba(214, 214, 214, 0.986),white );
-    
-}
-
-
-.recomendados__img{
-
-    transition: transform .3s;
-    border-radius: 20px;
-    
-    
-}
-
-.recomendados__img:hover{
-
-    transform: scale(1.03);
-    
-    
-}
-
-
-
-/*  RESEÑAS */
-
-.reseñas{
-
-    background: linear-gradient(to bottom, white, rgba(214, 214, 214, 0.986));
-    
-}
-
-
-.reseña-1__img{
-    
-    border-radius: 20px;
-
-    
-}
-
-.reseña-1__texto{
-    text-align: center;
-    min-height: 80%;
-    max-width: 80%;
-    
-}
-
-@media (max-width: 770px) { 
-
-    .reseñas__video{
-
-        display: flex;
-        flex-direction: column-reverse;
-        
-
-    }
-
-}
-
-
-
-
-
-    .form{
-
-        min-width: 100%;
-        min-height: 80vh;
-
-        /* background-color: red; */
-        
-    
-        justify-content: space-evenly;
-    }
-
-    form div{
-
-        max-height: 100%;
-        align-self: center;
-        
-    }
-    
-    form div div{
-    
-        margin: 20px 0;
-        min-height: 100%;
-      /*   background-color: yellow; */
-    }
-
-    .input{
-
-        width: 80%;
-    }
-    
-    form div div img{
-    
-       max-width: 60%;
-    }
-    
-    form div div a{
-    
-        color:  rgb(24, 23, 23);
-        text-decoration: none;
-    }
-
-    .butons{
-        flex-direction: column;
-    }
-    .btn{
-        min-width: 50%;
-    }
-
-    
-
-
-
-
-.form{
-
-    max-width: 70%;
-    min-height: 80vh;
-    
-
-    justify-content: space-evenly;
-}
-
-form div{
-
-    max-height: 60%;
-    align-self: center;
-}
-
-form div div{
-
-    margin: 20px 0;
-    min-height: 40%;
-}
-
-form div div img{
-
-   max-width: 60%;
-}
-
-form div div a{
-
-    color:  rgb(24, 23, 23);
-    text-decoration: none;
-}
-
-form div div a:hover{
-
-    color:  rgb(77, 75, 75);
-}
-
-.input{
-
-    min-width: 50%;
-    height: 50px;
-    background-color: rgb(119, 119, 116);
-    border-radius: 20px;
-}
-
-.btn{
-    background-color: rgb(24, 23, 23);;
-    width: 10%;
-    border-radius: 15px;
-    padding: 10px 20px;
-    margin: 0 20px;
-    font-weight: bold;
-}
-
-.py{
-
-    padding: 20px 0;
-}
-
-.no-dec{
-    text-decoration: none;
-    color: white;
-}
-
-.label{
-
-    font-weight: bold;
-    padding: 10px 0;
-}
-
-.footer li a{
-
-    text-decoration: none;
-    color: rgb(197, 193, 193);
-}
-
-.footer li a:hover{
-
-    
-    color: rgb(255, 254, 254);
-}
-
-.footer .social{
-
-    color: rgb(197, 193, 193);
-    font-size: 50px;
-    padding: 0 10px;
-    
-
-}
-
-.footer .social:hover{
-
-    color: white;
-
-
-}
+/*# sourceMappingURL=styles.css.map */

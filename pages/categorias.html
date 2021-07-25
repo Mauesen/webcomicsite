@@ -4,52 +4,135 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="../css/styles.css">
+    <!-- Fonts -->
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/fa-all.min.css">
+    
+    <!-- Styles -->
+
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <!-- Bootstrap -->
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     
     <title>Web Comic Site</title>
 </head>
 <body>
 
-    <div class="container">
+    <div class="">
 
         <!-- Header -->
-        <header class="header row center" >           
+        <header class="header bg-dark " >           
 
             <!-- Header Interior-->
-            <div class="inner-header row center">
-
-                <!-- Encabezado -->
-                <div class="logo col center" >
-                    <a href="#">WebComicSite</a>
-                </div>
-                <!-- Encabezado -->
+            <div class="inner-header container">             
             
                 <!-- Nav-bar -->
-                <nav class="nav row center ">
 
-                    <div class="nav__start row ">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <a class="navbar-brand" href="#">WebComicSite</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                  
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      
+                        <ul class="navbar-nav mr-auto">
+                        
+                            <li class="nav-item ">
+                          
+                                <a class="nav-link" href="../index.html">Inicio </a>
+                        
+                            </li>
+                        
+                            <li class="nav-item">
+                          
+                                <a class="nav-link" href="#">Ranking</a>
+                        
+                            </li>
+                        
+                            <li class="nav-item">
+                            
+                                <a class="nav-link active" href="#">Categorías </a>
+                        
+                            </li>
+                
+                      </ul>
 
-                        <a class="nav__enlace"  href="../index.html">Inicio</a>
-                        <a class="nav__enlace" href="#" >Categorías</a>
-                        <a class="nav__enlace" href="#" >Autores</a>
-                        <a class="nav__enlace" href="../index.html#ranking" >Top</a>
+                      <form class="form-inline my-2 my-lg-0">
+
+                        <input class="form-control mr-sm-2" type="search" placeholder="Buscar..." aria-label="Search">
+
+                        <button type="button" class="btn btn-outline-light my-2 my-sm-0 " data-toggle="modal" data-target="#loginModal">Iniciar Sesión</button> 
+                             
+                      </form>
 
                     </div>
 
-                    <div class="nav__end row ">
+                  </nav>
 
-                        <input class="nav__input" type="text" placeholder="Buscar..">     
-                        <a class="nav__enlace" href="inicio_sesion.html" >Iniciar Sesión</a>
-                    </div>
-               
-
-                </nav>
                 <!-- Nav-bar --> 
 
             </div>
             <!-- Header Interior-->
+
+            <!-- Log in Modal -->
+            <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+                <div class="modal-dialog modal-dialog-centered" role="document">
+
+                    <div class="modal-content">
+                    
+
+                        <div style="position: relative;"> 
+                            <button type="button" style=" position: absolute; right: 0px;" class=" close " data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            <img src="../img/slider.jpg" alt="" class="img-fluid">
+                            
+                        </div>
+
+                        <div class="modal-body">
+
+                            <div class="form-title text-center">
+                                <h4>Iniciar Sesión</h4>
+                            </div>
+
+                            <div class="d-flex flex-column text-center">
+                                
+                                <form>
+
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" id="email1"placeholder="Ingresá tu correo...">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <input type="password" class="form-control" id="password1" placeholder="Ingresá tu contraseña...">
+                                    </div>
+
+                                    <button type="button" class="btn btn-dark btn-block btn-round">Iniciar Sesión</button>
+
+                                </form>
+
+                            </div>
+
+                        </div>
+
+                        <div class="modal-footer d-flex justify-content-center">
+
+                            <div class="signup-section">No estás registrado/a? <a href="#a" class="text-info"> Registrate</a>.</div>
+
+                        </div>
+
+                    </div>
+
+                </div>  
+            </div>  
+            <!-- Log in Modal END -->
             
             
             
@@ -57,145 +140,571 @@
         <!-- Header -->
 
         <!-- Main -->
-        <main class="row">
+        <main >
+
+            <!-- Navegación -->
+
+            <div class="navegacion">
+
+                <div class="navegacion-inner container" >
+
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item">
+                          <a class="nav-link " href="#accion">Acción</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#terror">Terror</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#ciencia_ficcion">Ciencia Ficción</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link " href="#fantasia">Fantasía</a>
+                        </li>
+                        
+                      </ul>
+
+                </div>
+            </div>
+
             
-        
-            <section class="recomendados row center">
-                <h4 class="title row center"> Acción</h4>
-                <div class="inner-recomendados row">
-                    <div class="col">
+
+            <!-- Navegación END-->
+            
+            <!-- Sección Acción -->
+
+            <section id="accion">
+                
+                <div class="container  pt-3">
+
+                    <h4 class="title bg-dark"> Acción</h4>
+
+                    <div class="row">
+
+                        <div class="col-md-3  ">
                         
-                        <div>Nombre - Autor</div>
-                        <div><img src="../img/rec1.jpg" alt="Foto Comic"></div>
+                            <div class="card " style="background: none; border: none;">
+                                <div class="card-header text-center" style="background: none; border: none;">
+                                    Nombre - Autor
+                                </div>
+                                <img class="img-fluid mx-auto d-block recomendados__img" src="../img/rec2.jpg" alt="Foto Comic">
+                            </div>            
+    
+                        </div>
+
+                        <div class="col-md-3  ">
                         
+                            <div class="card " style="background: none; border: none;">
+                                <div class="card-header text-center" style="background: none; border: none;">
+                                    Nombre - Autor
+                                </div>
+                                <img class="img-fluid mx-auto d-block recomendados__img" src="../img/rec2.jpg" alt="Foto Comic">
+                            </div>            
+    
+                        </div>
+
+                        <div class="col-md-3  ">
+                        
+                            <div class="card " style="background: none; border: none;">
+                                <div class="card-header text-center" style="background: none; border: none;">
+                                    Nombre - Autor
+                                </div>
+                                <img class="img-fluid mx-auto d-block recomendados__img" src="../img/rec2.jpg" alt="Foto Comic">
+                            </div>            
+    
+                        </div>
+
+                        <div class="col-md-3  ">
+                        
+                            <div class="card " style="background: none; border: none;">
+                                <div class="card-header text-center" style="background: none; border: none;">
+                                    Nombre - Autor
+                                </div>
+                                <img class="img-fluid mx-auto d-block recomendados__img" src="../img/rec2.jpg" alt="Foto Comic">
+                            </div>            
+    
+                        </div>     
 
                     </div>
-                    <div class="col">
+
+                    <div class="row">
+
+                        <div class="col-md-3  ">
                         
-                        <div>Nombre - Autor</div>
-                        <div><img src="../img/rec2.jpg" alt="Foto Comic"></div>
-                    </div>
-                    <div class="col">
+                            <div class="card " style="background: none; border: none;">
+                                <div class="card-header text-center" style="background: none; border: none;">
+                                    Nombre - Autor
+                                </div>
+                                <img class="img-fluid mx-auto d-block recomendados__img" src="../img/rec2.jpg" alt="Foto Comic">
+                            </div>            
+    
+                        </div>
+
+                        <div class="col-md-3  ">
                         
-                        <div>Nombre - Autor</div>
-                        <div><img src="../img/rec3.jpg" alt="Foto Comic"></div>
-                    </div>
-                    <div class="col">
+                            <div class="card " style="background: none; border: none;">
+                                <div class="card-header text-center" style="background: none; border: none;">
+                                    Nombre - Autor
+                                </div>
+                                <img class="img-fluid mx-auto d-block recomendados__img" src="../img/rec2.jpg" alt="Foto Comic">
+                            </div>            
+    
+                        </div>
+
+                        <div class="col-md-3  ">
                         
-                        <div>Nombre - Autor</div>
-                        <div><img src="../img/rec4.jpg" alt="Foto Comic"></div>                    
+                            <div class="card " style="background: none; border: none;">
+                                <div class="card-header text-center" style="background: none; border: none;">
+                                    Nombre - Autor
+                                </div>
+                                <img class="img-fluid mx-auto d-block recomendados__img" src="../img/rec2.jpg" alt="Foto Comic">
+                            </div>            
+    
+                        </div>
+
+                        <div class="col-md-3  ">
+                        
+                            <div class="card " style="background: none; border: none;">
+                                <div class="card-header text-center" style="background: none; border: none;">
+                                    Nombre - Autor
+                                </div>
+                                <img class="img-fluid mx-auto d-block recomendados__img" src="../img/rec2.jpg" alt="Foto Comic">
+                            </div>            
+    
+                        </div>     
+
                     </div>
+                   
                 </div>
+                      
             </section>
+            <!-- Sección Acción END-->
 
-            <section class="recomendados row center">
-                <h4 class="title row center"> Fantasía</h4>
-                <div class="inner-recomendados row">
-                    <div class="col">
+            <!-- Sección Terror-->
+
+            <section id="terror">
+                
+                <div class="container  pt-3">
+
+                    <h4 class="title bg-dark"> Terror</h4>
+
+                    <div class="row">
+
+                        <div class="col-md-3  ">
                         
-                        <div>Nombre - Autor</div>
-                        <div><img src="../img/rec1.jpg" alt="Foto Comic"></div>
+                            <div class="card " style="background: none; border: none;">
+                                <div class="card-header text-center" style="background: none; border: none;">
+                                    Nombre - Autor
+                                </div>
+                                <img class="img-fluid mx-auto d-block recomendados__img" src="../img/rec1.jpg" alt="Foto Comic">
+                            </div>            
+    
+                        </div>
+
+                        <div class="col-md-3  ">
                         
+                            <div class="card " style="background: none; border: none;">
+                                <div class="card-header text-center" style="background: none; border: none;">
+                                    Nombre - Autor
+                                </div>
+                                <img class="img-fluid mx-auto d-block recomendados__img" src="../img/rec1.jpg" alt="Foto Comic">
+                            </div>            
+    
+                        </div>
+
+                        <div class="col-md-3  ">
+                        
+                            <div class="card " style="background: none; border: none;">
+                                <div class="card-header text-center" style="background: none; border: none;">
+                                    Nombre - Autor
+                                </div>
+                                <img class="img-fluid mx-auto d-block recomendados__img" src="../img/rec1.jpg" alt="Foto Comic">
+                            </div>            
+    
+                        </div>
+
+                        <div class="col-md-3  ">
+                        
+                            <div class="card " style="background: none; border: none;">
+                                <div class="card-header text-center" style="background: none; border: none;">
+                                    Nombre - Autor
+                                </div>
+                                <img class="img-fluid mx-auto d-block recomendados__img" src="../img/rec1.jpg" alt="Foto Comic">
+                            </div>            
+    
+                        </div>     
 
                     </div>
-                    <div class="col">
+
+                    <div class="row">
+
+                        <div class="col-md-3  ">
                         
-                        <div>Nombre - Autor</div>
-                        <div><img src="../img/rec2.jpg" alt="Foto Comic"></div>
-                    </div>
-                    <div class="col">
+                            <div class="card " style="background: none; border: none;">
+                                <div class="card-header text-center" style="background: none; border: none;">
+                                    Nombre - Autor
+                                </div>
+                                <img class="img-fluid mx-auto d-block recomendados__img" src="../img/rec1.jpg" alt="Foto Comic">
+                            </div>            
+    
+                        </div>
+
+                        <div class="col-md-3  ">
                         
-                        <div>Nombre - Autor</div>
-                        <div><img src="../img/rec3.jpg" alt="Foto Comic"></div>
-                    </div>
-                    <div class="col">
+                            <div class="card " style="background: none; border: none;">
+                                <div class="card-header text-center" style="background: none; border: none;">
+                                    Nombre - Autor
+                                </div>
+                                <img class="img-fluid mx-auto d-block recomendados__img" src="../img/rec1.jpg" alt="Foto Comic">
+                            </div>            
+    
+                        </div>
+
+                        <div class="col-md-3  ">
                         
-                        <div>Nombre - Autor</div>
-                        <div><img src="../img/rec4.jpg" alt="Foto Comic"></div>                    
+                            <div class="card " style="background: none; border: none;">
+                                <div class="card-header text-center" style="background: none; border: none;">
+                                    Nombre - Autor
+                                </div>
+                                <img class="img-fluid mx-auto d-block recomendados__img" src="../img/rec1.jpg" alt="Foto Comic">
+                            </div>            
+    
+                        </div>
+
+                        <div class="col-md-3  ">
+                        
+                            <div class="card " style="background: none; border: none;">
+                                <div class="card-header text-center" style="background: none; border: none;">
+                                    Nombre - Autor
+                                </div>
+                                <img class="img-fluid mx-auto d-block recomendados__img" src="../img/rec1.jpg" alt="Foto Comic">
+                            </div>            
+    
+                        </div>     
+
                     </div>
+                   
                 </div>
+
+                          
             </section>
+            <!-- Sección Terror END-->
 
-            <section class="recomendados row center">
-                <h4 class="title row center"> Ciencia Ficción</h4>
-                <div class="inner-recomendados row">
-                    <div class="col">
+            <!-- Sección Ciencia Ficción-->
+
+            <section id="ciencia_ficcion">
+                
+                <div class="container  pt-3">
+
+                    <h4 class="title bg-dark"> Ciencia Ficción</h4>
+
+                    <div class="row">
+
+                        <div class="col-md-3  ">
                         
-                        <div>Nombre - Autor</div>
-                        <div><img src="../img/rec1.jpg" alt="Foto Comic"></div>
+                            <div class="card " style="background: none; border: none;">
+                                <div class="card-header text-center" style="background: none; border: none;">
+                                    Nombre - Autor
+                                </div>
+                                <img class="img-fluid mx-auto d-block recomendados__img" src="../img/rec3.jpg" alt="Foto Comic">
+                            </div>            
+    
+                        </div>
+
+                        <div class="col-md-3  ">
                         
+                            <div class="card " style="background: none; border: none;">
+                                <div class="card-header text-center" style="background: none; border: none;">
+                                    Nombre - Autor
+                                </div>
+                                <img class="img-fluid mx-auto d-block recomendados__img" src="../img/rec3.jpg" alt="Foto Comic">
+                            </div>            
+    
+                        </div>
+
+                        <div class="col-md-3  ">
+                        
+                            <div class="card " style="background: none; border: none;">
+                                <div class="card-header text-center" style="background: none; border: none;">
+                                    Nombre - Autor
+                                </div>
+                                <img class="img-fluid mx-auto d-block recomendados__img" src="../img/rec3.jpg" alt="Foto Comic">
+                            </div>            
+    
+                        </div>
+
+                        <div class="col-md-3  ">
+                        
+                            <div class="card " style="background: none; border: none;">
+                                <div class="card-header text-center" style="background: none; border: none;">
+                                    Nombre - Autor
+                                </div>
+                                <img class="img-fluid mx-auto d-block recomendados__img" src="../img/rec3.jpg" alt="Foto Comic">
+                            </div>            
+    
+                        </div>     
 
                     </div>
-                    <div class="col">
+
+                    <div class="row">
+
+                        <div class="col-md-3  ">
                         
-                        <div>Nombre - Autor</div>
-                        <div><img src="../img/rec2.jpg" alt="Foto Comic"></div>
-                    </div>
-                    <div class="col">
+                            <div class="card " style="background: none; border: none;">
+                                <div class="card-header text-center" style="background: none; border: none;">
+                                    Nombre - Autor
+                                </div>
+                                <img class="img-fluid mx-auto d-block recomendados__img" src="../img/rec3.jpg" alt="Foto Comic">
+                            </div>            
+    
+                        </div>
+
+                        <div class="col-md-3  ">
                         
-                        <div>Nombre - Autor</div>
-                        <div><img src="../img/rec3.jpg" alt="Foto Comic"></div>
-                    </div>
-                    <div class="col">
+                            <div class="card " style="background: none; border: none;">
+                                <div class="card-header text-center" style="background: none; border: none;">
+                                    Nombre - Autor
+                                </div>
+                                <img class="img-fluid mx-auto d-block recomendados__img" src="../img/rec3.jpg" alt="Foto Comic">
+                            </div>            
+    
+                        </div>
+
+                        <div class="col-md-3  ">
                         
-                        <div>Nombre - Autor</div>
-                        <div><img src="../img/rec4.jpg" alt="Foto Comic"></div>                    
+                            <div class="card " style="background: none; border: none;">
+                                <div class="card-header text-center" style="background: none; border: none;">
+                                    Nombre - Autor
+                                </div>
+                                <img class="img-fluid mx-auto d-block recomendados__img" src="../img/rec3.jpg" alt="Foto Comic">
+                            </div>            
+    
+                        </div>
+
+                        <div class="col-md-3  ">
+                        
+                            <div class="card " style="background: none; border: none;">
+                                <div class="card-header text-center" style="background: none; border: none;">
+                                    Nombre - Autor
+                                </div>
+                                <img class="img-fluid mx-auto d-block recomendados__img" src="../img/rec3.jpg" alt="Foto Comic">
+                            </div>            
+    
+                        </div>     
+
                     </div>
+                   
                 </div>
+
+                          
             </section>
+            <!-- Sección Ciencia Ficción END-->
 
-            <section class="recomendados row center">
-                <h4 class="title row center"> Terror</h4>
-                <div class="inner-recomendados row">
-                    <div class="col">
+            <!-- Sección Fantasía-->
+
+            <section id="fantasia" class="pb-3">
+                
+                <div class="container  pt-3">
+
+                    <h4 class="title bg-dark"> Fantasía</h4>
+
+                    <div class="row">
+
+                        <div class="col-md-3  ">
                         
-                        <div>Nombre - Autor</div>
-                        <div><img src="../img/rec1.jpg" alt="Foto Comic"></div>
+                            <div class="card " style="background: none; border: none;">
+                                <div class="card-header text-center" style="background: none; border: none;">
+                                    Nombre - Autor
+                                </div>
+                                <img class="img-fluid mx-auto d-block recomendados__img" src="../img/rec4.jpg" alt="Foto Comic">
+                            </div>            
+    
+                        </div>
+
+                        <div class="col-md-3  ">
                         
+                            <div class="card " style="background: none; border: none;">
+                                <div class="card-header text-center" style="background: none; border: none;">
+                                    Nombre - Autor
+                                </div>
+                                <img class="img-fluid mx-auto d-block recomendados__img" src="../img/rec4.jpg" alt="Foto Comic">
+                            </div>            
+    
+                        </div>
+
+                        <div class="col-md-3  ">
+                        
+                            <div class="card " style="background: none; border: none;">
+                                <div class="card-header text-center" style="background: none; border: none;">
+                                    Nombre - Autor
+                                </div>
+                                <img class="img-fluid mx-auto d-block recomendados__img" src="../img/rec4.jpg" alt="Foto Comic">
+                            </div>            
+    
+                        </div>
+
+                        <div class="col-md-3  ">
+                        
+                            <div class="card " style="background: none; border: none;">
+                                <div class="card-header text-center" style="background: none; border: none;">
+                                    Nombre - Autor
+                                </div>
+                                <img class="img-fluid mx-auto d-block recomendados__img" src="../img/rec4.jpg" alt="Foto Comic">
+                            </div>            
+    
+                        </div>     
 
                     </div>
-                    <div class="col">
+
+                    <div class="row">
+
+                        <div class="col-md-3  ">
                         
-                        <div>Nombre - Autor</div>
-                        <div><img src="../img/rec2.jpg" alt="Foto Comic"></div>
-                    </div>
-                    <div class="col">
+                            <div class="card " style="background: none; border: none;">
+                                <div class="card-header text-center" style="background: none; border: none;">
+                                    Nombre - Autor
+                                </div>
+                                <img class="img-fluid mx-auto d-block recomendados__img" src="../img/rec4.jpg" alt="Foto Comic">
+                            </div>            
+    
+                        </div>
+
+                        <div class="col-md-3  ">
                         
-                        <div>Nombre - Autor</div>
-                        <div><img src="../img/rec3.jpg" alt="Foto Comic"></div>
-                    </div>
-                    <div class="col">
+                            <div class="card " style="background: none; border: none;">
+                                <div class="card-header text-center" style="background: none; border: none;">
+                                    Nombre - Autor
+                                </div>
+                                <img class="img-fluid mx-auto d-block recomendados__img" src="../img/rec4.jpg" alt="Foto Comic">
+                            </div>            
+    
+                        </div>
+
+                        <div class="col-md-3  ">
                         
-                        <div>Nombre - Autor</div>
-                        <div><img src="../img/rec4.jpg" alt="Foto Comic"></div>                    
+                            <div class="card " style="background: none; border: none;">
+                                <div class="card-header text-center" style="background: none; border: none;">
+                                    Nombre - Autor
+                                </div>
+                                <img class="img-fluid mx-auto d-block recomendados__img" src="../img/rec4.jpg" alt="Foto Comic">
+                            </div>            
+    
+                        </div>
+
+                        <div class="col-md-3  ">
+                        
+                            <div class="card " style="background: none; border: none;">
+                                <div class="card-header text-center" style="background: none; border: none;">
+                                    Nombre - Autor
+                                </div>
+                                <img class="img-fluid mx-auto d-block recomendados__img" src="../img/rec4.jpg" alt="Foto Comic">
+                            </div>            
+    
+                        </div>     
+
                     </div>
+                   
                 </div>
+
+                          
             </section>
+            <!-- Sección Fantasía END-->
         
+         
         
-        
-        </main>    <!-- Main -->
+        </main>    
+
+        <!-- Main END-->
 
         <!-- Pie de Página -->
-        <footer class="footer row center">
+       
+        <footer class="footer bg-dark pt-4 ">
 
+            <!-- Footer Links -->
+            <div class="container text-center text-md-left">
+        
+                <!-- Grid row -->
+                <div class="row">
             
-            <ul class="footer__menu row center">
+                    <!-- Grid column -->
+                    <div class="col-md-6 mt-md-0 mt-3">
             
-                <li><a href="">Acerca De</a></li>
-                <li><a href="">Contacto</a></li>
-                <li><a href="">FAQs</a></li>
-                <li><a href="">Twitter</a></li>
-                <li><a href="">Facebook</a></li>
-                <li><a href="">Instagram</a></li>
-            </ul>
-             
+                        <!-- Content -->
+                        <h5 class="text-uppercase ">Web Comics Site</h5>
+                        <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+            
+                    </div>
+                    <!-- Grid column -->
+            
+                    <hr class="clearfix w-100 d-md-none pb-3">
+            
+                    <!-- Grid column -->
+                    <div class="col-md-3 mb-md-0 mb-3">
+            
+                        <!-- Links -->
+                        <h5 class="text-uppercase">Links útiles</h5>
+                
+                        <ul class="list-unstyled">
+                            <li>
+                            <a href="#!">Categorías</a>
+                            </li>
+                            <li>
+                            <a href="#!">Ranking</a>
+                            </li>
+                            <li>
+                            <a href="#!">Autores</a>
+                            </li>
 
-            <div class="footer__subtitulo"><em>Web Comic Site 2021</em></div>
+                        </ul>
+            
+                    </div>
+                    <!-- Grid column -->
+            
+                    <!-- Grid column -->
+                    <div class="col-md-3 mb-md-0 mb-3">
+            
+                        <!-- Links -->
+                        <h5 class="text-uppercase">Redes Sociales</h5>
+                
 
+                        <!-- Facebook -->
+                        <a class="fb-ic">
+                            <i class="fab fa-facebook social"> </i>
+                        </a>
+                        <!-- Twitter -->
+                        <a class="tw-ic">
+                            <i class="fab fa-twitter social"> </i>
+                        </a>
+                                    
+                        <!--Instagram-->
+                        <a class="ins-ic">
+                            <i class="fab fa-instagram social"> </i>
+                        </a>
+                       
+                    </div>
+                        <!-- Grid column -->
+            
+                </div>
+                <!-- Grid row -->
+        
+            </div>
+            <!-- Footer Links -->
+        
+            <!-- Copyright -->
+            <div class="footer-copyright text-center py-3 text-white">© 2021 WebComicSite
+           <!--  <a href="https://mdbootstrap.com/"> MDBootstrap.com</a> -->
+            </div>
+            <!-- Copyright -->
+        
         </footer>
+        <!-- Footer -->
+        
         <!-- Pie de Página -->
     </div>
+    
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/fa-all.min.js"></script>
     
 </body>
 </html>

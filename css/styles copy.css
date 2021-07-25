@@ -1,0 +1,30 @@
+
+    
+
+.footer li a{
+
+    text-decoration: none;
+    color: rgb(197, 193, 193);
+}
+
+.footer li a:hover{
+
+    
+    color: rgb(255, 254, 254);
+}
+
+.footer .social{
+
+    color: rgb(197, 193, 193);
+    font-size: 50px;
+    padding: 0 10px;
+    
+
+}
+
+.footer .social:hover{
+
+    color: white;
+
+
+}

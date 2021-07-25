@@ -1,0 +1,57 @@
+@import '../utilities/mixins';
+
+/* RANKING SEMANAL*/
+
+#ranking_semanal{
+    
+    background-color: darken(white, 5%);
+
+    border-bottom: 1px solid darken(white, 20%);
+
+    .top-1{
+
+        img{
+
+            transition: transform .3s;
+            border-radius: 20px;
+
+            &:hover{
+
+                transform: scale(1.05);
+
+            }
+
+        }
+    }
+
+    .top-4{
+
+        img{
+
+            transition: transform .3s;
+            border-radius: 30px;
+            margin: 5px 0;
+
+            &:hover{
+
+                transform: scale(1.05);
+
+            }
+
+        }
+    }
+
+    .card{
+
+        @include transparente;
+
+        .card-header{
+
+            @include transparente;
+        }
+    }
+   
+}
+
+
+

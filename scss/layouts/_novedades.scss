@@ -1,0 +1,33 @@
+@import '../utilities/mixins';
+
+/* NOVEDADES */
+
+#novedades{
+
+    background-color: darken(white, 10%);
+    border-bottom: 1px solid darken(white, 20%);
+
+    .card{
+
+        @include transparente;
+
+        .card-header{
+
+            @include transparente;
+        }
+    }
+
+    img{
+
+        transition: transform .3s;
+        border-radius: 20px;
+
+        &:hover{
+
+            transform: scale(1.03);
+
+        }
+
+    }
+}
+

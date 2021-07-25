@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/fa-all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
     
     <!-- Styles -->
 
@@ -23,349 +23,442 @@
 </head>
 <body>
 
-    <div class="">
+    <!-- Header -->
+    <header class="header bg-dark " >           
 
-        <!-- Header -->
-        <header class="header bg-dark " >           
+        <!-- Header Interior-->
+        <div class="inner-header container">             
+        
+            <!-- Nav-bar -->
 
-            <!-- Header Interior-->
-            <div class="inner-header container">             
-            
-                <!-- Nav-bar -->
-
-                <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-                    <a class="navbar-brand" href="#">WebComicSite</a>
-                    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
-                    </button>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                
+                <h1 class="navbar-brand"  style="margin-bottom: 0px;">
+                  WebComicSite
+                </h1>   
+                
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
               
-                    <div class="navbar-collapse collapse" id="navbarsExample04" style="">
-                      <ul class="navbar-nav mr-auto">
-                        
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  
+                    <ul class="navbar-nav mr-auto">
+                    
                         <li class="nav-item active">
-                          <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
-                        </li>
-
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">Categorías</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Autores</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Ranking</a>
-                        </li>
                       
-                       <!--  <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                          <div class="dropdown-menu" aria-labelledby="dropdown04">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                          </div>
-                        </li> -->
-                      </ul>
-                      <form class="form-inline my-2 my-md-0">
-                        <input class="form-control" type="text" placeholder="Buscar...">
-                      </form>
-                    </div>
-                  </nav>
-                <!-- Nav-bar --> 
+                            <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+                    
+                        </li>
+                    
+                        <li class="nav-item">
+                      
+                            <a class="nav-link" href="#">Ranking</a>
+                    
+                        </li>
+                    
+                        <li class="nav-item">
+                        
+                            <a class="nav-link" href="pages/categorias.html">Categorías</a>
+                    
+                        </li>
+            
+                  </ul>
 
-            </div>
-            <!-- Header Interior-->
-            
-            
-            
-        </header>
-        <!-- Header -->
+                  <form class="form-inline my-2 my-lg-0">
 
-        <!-- Main -->
-        <main >
-            
-            <!-- <div class="slider row center">
-                <div class="inner-slider col">
-                   <img src="img/slider.jpg" alt="Slider">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Buscar..." aria-label="Search">
+
+                    <button type="button" class="btn btn-outline-light my-2 my-sm-0 " data-toggle="modal" data-target="#loginModal">Iniciar Sesión</button> 
+                         
+                  </form>
+
                 </div>
-            </div> -->
 
-            <!-- Carousel -->
+              </nav>
 
-            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                  <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-                  <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-                  <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="img/slider.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5>Nombre</h5>
-                      <p>Descipción</p>
+            <!-- Nav-bar --> 
+
+        </div>
+        <!-- Header Interior-->
+
+        <!-- Log in Modal -->
+        <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+            <div class="modal-dialog modal-dialog-centered" role="document">
+
+                <div class="modal-content">
+                
+
+                    <div style="position: relative;"> 
+                        <button type="button" style=" position: absolute; right: 0px;" class=" close " data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <img src="img/slider-1.jpg" alt="" class="img-fluid">
+                        
                     </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img src="img/slider.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5>Nombre</h5>
-                      <p>Descipción</p>
+
+                    <div class="modal-body">
+
+                        <div class="form-title text-center">
+                            <h4>Iniciar Sesión</h4>
+                        </div>
+
+                        <div class="d-flex flex-column text-center">
+                            
+                            <form>
+
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="email1"placeholder="Ingresá tu correo...">
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="password" class="form-control" id="password1" placeholder="Ingresá tu contraseña...">
+                                </div>
+
+                                <button type="button" class="btn btn-dark btn-block btn-round">Iniciar Sesión</button>
+
+                            </form>
+
+                        </div>
+
                     </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img src="img/slider.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Nombre</h5>
-                        <p>Descipción</p>
+
+                    <div class="modal-footer d-flex justify-content-center">
+
+                        <div class="signup-section">No estás registrado/a? <a href="#a" class="text-info"> Registrate</a>.</div>
+
                     </div>
-                  </div>
+
                 </div>
-                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Next</span>
-                </a>
+
+            </div>  
+        </div>  
+        <!-- Log in Modal END -->
+        
+        
+        
+    </header>
+    <!-- Header END -->
+
+    <!-- Main -->
+    <main >
+
+        <!-- Carousel -->
+
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+              <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/slider-1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Nombre</h5>
+                  <p>Descipción</p>
+                </div>
               </div>
-
-            <!-- Carousel END-->
-            
-            <!-- Ranking -->
-            <section id="ranking" class="ranking ">
-        
-                <div class="container pt-3">
-
-                    <h4 class="title  bg-dark "> Ranking Semanal !!</h4>
-                
-                    <div class="row">
-
-                        <div class="top-1 col-md-6 ">
-
-                            <div class="top-1__title ">One Piece - 1017 - Oda</div>
-                            <img class="img-fluid top-1__img" src="img/top1.jpg" alt="Foto Comic" >
-                        
-                        </div>
-                    
-                        <div class="top-4 col-md-6 ">
-                                
-                                
-                            <div class="row">
-    
-                                <img  src="img/top2.jpg" alt="Foto Comic" class="top-4__img  col-6">
-                                <div class=" col-6 d-flex justify-content-center align-items-center"> Nombre - N° - Autor</div>
-    
-                            </div>
-    
-                            <div class="row">
-    
-                                <img src="img/top3.jpg" alt="Foto Comic" class="top-4__img col-6">
-                                <div class=" col-6 d-flex justify-content-center align-items-center">Nombre - N° - Autor</div>
-    
-                            </div>
-    
-                            <div class="row">
-    
-                                <img src="img/top4.jpg" alt="Foto Comic" class="top-4__img col-6">
-                                <div class=" col-6 d-flex justify-content-center align-items-center">Nombre - N° - Autor</div>
-    
-                            </div>
-    
-                            <div class="row">
-    
-                                <img src="img/top5.jpg" alt="Foto Comic" class="top-4__img col-6">
-                                <div class=" col-6 d-flex justify-content-center align-items-center">Nombre - N° - Autor</div>
-    
-                            </div>                               
-                            
-                        </div>
-
-                    </div>
-                    
+              <div class="carousel-item">
+                <img src="img/slider-2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Nombre</h5>
+                  <p>Descipción</p>
                 </div>
-            
-            </section>
-            <!-- Ranking END-->
+              </div>
+              <div class="carousel-item">
+                <img src="img/slider-3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Nombre</h5>
+                    <p>Descipción</p>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+
+        <!-- Carousel END-->
         
-            <section class="recomendados ">
-                
-                <div class="container  pt-3">
-
-                    <h4 class="title bg-dark"> Recomendados</h4>
-
-                    <div class="row">
-
-                        <div class="col-md-3  ">
-                        
-                            <div class="d-flex justify-content-center align-items-center">Nombre - Autor</div>
-                            <img class="img-fluid mx-auto d-block recomendados__img " src="img/rec1.jpg" alt="Foto Comic">
-                            
+        <!-- Ranking Semanal-->
+        <section  id="ranking_semanal" >
     
-                        </div>
-                        <div class="col-md-3">
+            <div class="container">
+
+                <h4 class="titulo "> Ranking Semanal !!</h4>
+            
+                <div class="row">
+
+                    <div class="top-1 col-md-6 ">
+
+                        <div class="card ">
+                            <div class="card-header text-center" >
+                                Nombre - Autor
+                            </div>
+                            <a href="pages/comics/example/pagina-1.html"> <img class="img-fluid " src="img/top1.jpg" alt="Foto Comic"></a>
+                           
+                        </div>   
+
+                       
+                    
+                    </div>
+                
+                    <div class="top-4 col-md-6 ">
                             
-                            <div class="d-flex justify-content-center align-items-center">Nombre - Autor</div>
-                            <img class="img-fluid mx-auto d-block recomendados__img" src="img/rec2.jpg" alt="Foto Comic">
-                        </div>
-                        <div class="col-md-3">
                             
-                            <div class="d-flex justify-content-center align-items-center">Nombre - Autor</div>
-                            <img class="img-fluid mx-auto d-block recomendados__img" src="img/rec3.jpg" alt="Foto Comic">
+                        <div class="row">
+
+                            <img  src="img/top2.jpg" alt="Foto Comic" class="top-4__img  col-6">
+                            <div class=" col-6 center"> Nombre - N° - Autor</div>
+
                         </div>
-                        <div class="col-md-3">
+
+                        <div class="row">
+
+                            <img src="img/top3.jpg" alt="Foto Comic" class="top-4__img col-6">
+                            <div class=" col-6 center">Nombre - N° - Autor</div>
+
+                        </div>
+
+                        <div class="row">
+
+                            <img src="img/top4.jpg" alt="Foto Comic" class="top-4__img col-6">
+                            <div class=" col-6 center">Nombre - N° - Autor</div>
+
+                        </div>
+
+                        <div class="row">
+
+                            <img src="img/top5.jpg" alt="Foto Comic" class="top-4__img col-6">
+                            <div class=" col-6 center">Nombre - N° - Autor</div>
+
+                        </div>                               
+                        
+                    </div>
+
+                </div>
+                
+            </div>
+        
+        </section>
+        <!-- Ranking Semanal END-->
+
+        <!-- Novedades -->
+    
+        <section id="novedades">
+            
+            <div class="container">
+
+                <h4 class="titulo "> Últimos Lanzamientos</h4>
+
+                <div class="row">
+
+                    <div class="col-md-3  ">
+                    
+                        <div class="card " >
+                            <div class="card-header text-center" >
+                                Nombre - Autor
+                            </div>
+                           
+                            <img class="img-fluid" src="img/rec1.jpg" alt="Foto Comic">
                             
-                            <div class="d-flex justify-content-center align-items-center">Nombre - Autor</div>
-                            <img class="img-fluid mx-auto d-block recomendados__img" src="img/rec4.jpg" alt="Foto Comic">                   
-                        </div>
+                            
+                        </div>            
 
                     </div>
+
+                    <div class="col-md-3  ">
+                    
+                        <div class="card " >
+                            <div class="card-header text-center" >
+                                Nombre - Autor
+                            </div>
+                            <img class="img-fluid " src="img/rec2.jpg" alt="Foto Comic">
+                        </div>            
+
+                    </div>
+
+                    <div class="col-md-3  ">
+                    
+                        <div class="card " >
+                            <div class="card-header text-center" >
+                                Nombre - Autor
+                            </div>
+                            
+                            <img class="img-fluid " src="img/rec3.jpg" alt="Foto Comic">
+                        </div>            
+
+                    </div>
+
+                    <div class="col-md-3  ">
+                    
+                        <div class="card " >
+                            <div class="card-header text-center" >
+                                Nombre - Autor
+                            </div>
+                            <img class="img-fluid " src="img/rec4.jpg" alt="Foto Comic">
+                        </div>            
+
+                    </div>     
+
+                </div>
+               
+            </div>
+        </section>
+
+        <!-- Novedades END-->
+
+        <!-- Reseñas Recomendadas -->
+    
+        <section id="reseñas_recomendadas">
+            
+            <div class="container ">
+
+                <h4 class="titulo "> Reseñas Recomendadas</h4>
+            
+                <div class="row ">
+                    <div class="col-md-6">
+                      
+                        <img src="img/reseña.jpg" alt="Foto Comic" class=" img-fluid reseña-1__img">
+
+                        <div class=" row center">
+
+                            <h4 class="col-12 text-center">Titulo</h4>
+                            <p class=" col-12 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Nam magni pariatur tenetur repellendus perferendis odio 
+                                rerum ratione alias, repellat nemo ipsum a perspiciatis
+                                 adipisci nisi nobis ducimus voluptatum eligendi quaerat!
+                            </p>
+
+                        </div>
+                       
+
+                    </div>
+                    <div class="col-md-6 reseñas__video">
+
+                        <div class="row center">
+
+                            <h4 class="col-12 text-center">Titulo</h4>
+                            <p class="col-12">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Nam magni pariatur tenetur repellendus perferendis odio 
+                                rerum ratione alias, repellat nemo ipsum a perspiciatis
+                                 adipisci nisi nobis ducimus voluptatum eligendi quaerat!
+                            </p>
+
+                        </div>
+                       
+                        
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/s2gPeUQTjec" allowfullscreen></iframe>
+                        </div>
+                       
+
+                    </div>
+                </div>
+              
+            </div>
+        
+        </section>
+
+        <!-- Reseñas Recomendadas END-->
+    
+    </main>    
+    
+    <!-- Main END-->
+
+    <!-- Pie de Página -->
+   
+    <footer class="footer bg-dark pt-4 ">
+
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left">
+    
+            <!-- Grid row -->
+            <div class="row">
+        
+                <!-- Grid column -->
+                <div class="col-md-6 mt-md-0 mt-3">
+        
+                    <!-- Content -->
+                    <h6 class="text-uppercase ">Web Comics Site</h6>
+                    <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+        
+                </div>
+                <!-- Grid column -->
+        
+        
+                <!-- Grid column -->
+                <div class="col-md-3 mb-md-0 mb-3">
+        
+                    <!-- Links -->
+                    <h6 class="text-uppercase">Links útiles</h6>
+            
+                    <ul class="list-unstyled">
+                        <li>
+                        <a href="pages/categorias.html">Categorías</a>
+                        </li>
+                        <li>
+                        <a href="#!">Ranking</a>
+                        </li>
+                        <li>
+                        <a href="#!">Autores</a>
+                        </li>
+
+                    </ul>
+        
+                </div>
+                <!-- Grid column -->
+        
+                <!-- Grid column -->
+                <div class="col-md-3 mb-md-0 mb-3">
+        
+                    <!-- Links -->
+                    <h6 class="text-uppercase">Redes Sociales</h6>
+            
+
+                    <!-- Facebook -->
+                    <a href=""><i class="fab fa-facebook"></i></a>
+                   
+                    <!-- Twitter -->
+                  
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                                
+                    <!--Instagram-->
+
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                   
                    
                 </div>
-            </section>
-        
-            <section class="reseñas ">
-                
-                <div class="container pb-3 pt-3">
-
-                    <h4 class="title bg-dark"> Reseñas</h4>
-                
-                    <div class="row ">
-                        <div class="col-md-6">
-                          
-                            <img src="img/top1.jpg" alt="Foto Comic" class=" img-fluid reseña-1__img">
-
-                            <div class="d-flex justify-content-center row align-items-center">
-
-                                <h4 class="col-12">Titulo</h4>
-                                <p class=" col-12 reseña-1__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                    Nam magni pariatur tenetur repellendus perferendis odio 
-                                    rerum ratione alias, repellat nemo ipsum a perspiciatis
-                                     adipisci nisi nobis ducimus voluptatum eligendi quaerat!
-                                </p>
-
-                            </div>
-                           
-
-                        </div>
-                        <div class="col-md-6 reseñas__video">
-
-                            <div class="d-flex justify-content-center row align-items-center">
-
-                                <h4 class="col-12">Titulo</h4>
-                                <p class="reseña-1__texto col-12">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                    Nam magni pariatur tenetur repellendus perferendis odio 
-                                    rerum ratione alias, repellat nemo ipsum a perspiciatis
-                                     adipisci nisi nobis ducimus voluptatum eligendi quaerat!
-                                </p>
-
-                            </div>
-                           
-                            
-                            <div class="embed-responsive embed-responsive-16by9">
-                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/s2gPeUQTjec" allowfullscreen></iframe>
-                            </div>
-                           
-
-                        </div>
-                    </div>
-                  
-                </div>
-            
-            </section>
-        
-        </main>    <!-- Main -->
-
-        <!-- Pie de Página -->
-       
-        <footer class="footer bg-dark pt-4 ">
-
-            <!-- Footer Links -->
-            <div class="container text-center text-md-left">
-        
-                <!-- Grid row -->
-                <div class="row">
-            
                     <!-- Grid column -->
-                    <div class="col-md-6 mt-md-0 mt-3">
-            
-                        <!-- Content -->
-                        <h5 class="text-uppercase ">Web Comics Site</h5>
-                        <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
-            
-                    </div>
-                    <!-- Grid column -->
-            
-                    <hr class="clearfix w-100 d-md-none pb-3">
-            
-                    <!-- Grid column -->
-                    <div class="col-md-3 mb-md-0 mb-3">
-            
-                        <!-- Links -->
-                        <h5 class="text-uppercase">Links útiles</h5>
-                
-                        <ul class="list-unstyled">
-                            <li>
-                            <a href="#!">Categorías</a>
-                            </li>
-                            <li>
-                            <a href="#!">Ranking</a>
-                            </li>
-                            <li>
-                            <a href="#!">Autores</a>
-                            </li>
-
-                        </ul>
-            
-                    </div>
-                    <!-- Grid column -->
-            
-                    <!-- Grid column -->
-                    <div class="col-md-3 mb-md-0 mb-3">
-            
-                        <!-- Links -->
-                        <h5 class="text-uppercase">Redes Sociales</h5>
-                
-
-                        <!-- Facebook -->
-                        <a class="fb-ic">
-                            <i class="fab fa-facebook social"> </i>
-                        </a>
-                        <!-- Twitter -->
-                        <a class="tw-ic">
-                            <i class="fab fa-twitter social"> </i>
-                        </a>
-                                    
-                        <!--Instagram-->
-                        <a class="ins-ic">
-                            <i class="fab fa-instagram social"> </i>
-                        </a>
-                       
-                    </div>
-                        <!-- Grid column -->
-            
-                </div>
-                <!-- Grid row -->
         
             </div>
-            <!-- Footer Links -->
+            <!-- Grid row -->
+    
+        </div>
+        <!-- Footer Links -->
+    
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3 text-white">© 2021 WebComicSite  </div>       
         
-            <!-- Copyright -->
-            <div class="footer-copyright text-center py-3 text-white">© 2021 WebComicSite
-           <!--  <a href="https://mdbootstrap.com/"> MDBootstrap.com</a> -->
-            </div>
-            <!-- Copyright -->
-        
-        </footer>
-        <!-- Footer -->
-        
-        <!-- Pie de Página -->
-    </div>
+        <!-- Copyright -->
+    
+    </footer>
+    
+    <!-- Pie de Página END-->
+
+
     
     <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script> 
     <script src="js/fa-all.min.js"></script>
+    <script src="js/fontawesome.min.js"></script>
+ 
 </body>
 </html>

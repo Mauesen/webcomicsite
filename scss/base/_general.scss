@@ -1,0 +1,30 @@
+
+/* General */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+section{
+
+    padding: 15px 0;
+}
+
+.titulo{
+
+    color: whitesmoke;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #343a40;
+}
+
+.center{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

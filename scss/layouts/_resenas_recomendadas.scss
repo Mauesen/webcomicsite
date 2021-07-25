@@ -1,0 +1,42 @@
+@import '../utilities/mixins';
+
+/* RESEÑAS RECOMENDADAS*/
+
+#reseñas_recomendadas{
+
+    background-color: darken(white, 5%);
+    border-bottom: 1px solid darken(white, 20%);
+
+    img{
+        border-radius: 20px;
+    }
+
+/*     p{
+
+        text-align: center;
+        min-height: 80%;
+        max-width: 80%;
+
+    } */
+
+    .reseñas__video{
+
+        @media (max-width: 770px) { 
+
+            display: flex;
+            flex-direction: column-reverse;
+    
+        }    
+
+    }
+
+   
+}
+
+
+
+
+   
+    
+
+

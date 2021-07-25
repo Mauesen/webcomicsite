@@ -1,0 +1,12 @@
+@mixin transparente{
+    
+    background: none; 
+    border: none;
+}
+
+@mixin center{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
