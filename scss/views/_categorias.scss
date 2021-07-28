@@ -1,0 +1,80 @@
+@import '../utilities/mixins';
+@import '../utilities/variables';
+
+/* CATEGORÍAS */
+
+.categoria{
+
+    
+
+    .card{
+
+        @include transparente;
+
+        .card-header{
+
+            @include transparente;
+        }
+    }
+
+    img{
+
+        transition: transform .3s;
+        border-radius: 20px;
+
+        &:hover{
+
+            transform: scale(1.03);
+
+        }
+
+    }
+}
+
+#accion{
+    background: $bg-white-1;
+    border-bottom: $border-section;
+}
+
+#terror{
+    background: $bg-white-2;
+    border-bottom: $border-section;
+}
+
+#ciencia_ficcion{
+    background: $bg-white-1;
+    border-bottom: $border-section;
+}
+
+#fantasia{
+    background: $bg-white-2;
+    border-bottom: $border-section;
+}
+
+.navegacion{
+
+    background-color: white;
+    border-bottom: $border-section;
+    padding: 5px;
+
+    li{
+
+        a{
+
+            text-decoration: none;
+            color: rgb(197, 193, 193);
+
+            background-color: rgb(51, 49, 49);
+            border-radius: 10px;
+            margin: 5px 5px;
+
+            &:hover{
+
+                color: rgb(255, 254, 254);
+
+            }
+        }
+    }
+
+
+}

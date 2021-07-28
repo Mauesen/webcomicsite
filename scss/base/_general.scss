@@ -1,3 +1,5 @@
+@import '../utilities/mixins';
+@import '../utilities/variables';
 
 /* General */
 *{
@@ -14,11 +16,11 @@ section{
 
 .titulo{
 
-    color: whitesmoke;
+    color: $text-light;
     padding: 5px;
     border-radius: 5px;
     text-align: center;
-    background-color: #343a40;
+    background-color: $bg-dark;
 }
 
 .center{

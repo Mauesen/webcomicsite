@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* VARIABLES */
 /* General */
 * {
   box-sizing: border-box;
@@ -11,7 +12,7 @@ section {
 }
 
 .titulo {
-  color: whitesmoke;
+  color: #e5e2e2;
   padding: 5px;
   border-radius: 5px;
   text-align: center;
@@ -24,6 +25,7 @@ section {
   align-items: center;
 }
 
+/* VARIABLES */
 /* RANKING SEMANAL*/
 #ranking_semanal {
   background-color: #f2f2f2;
@@ -53,6 +55,7 @@ section {
   border: none;
 }
 
+/* VARIABLES */
 /* NOVEDADES */
 #novedades {
   background-color: #e6e6e6;
@@ -74,6 +77,7 @@ section {
   transform: scale(1.03);
 }
 
+/* VARIABLES */
 /* RESEÑAS RECOMENDADAS*/
 #reseñas_recomendadas {
   background-color: #f2f2f2;
@@ -94,6 +98,82 @@ section {
     display: flex;
     flex-direction: column-reverse;
   }
+}
+
+.footer h6 {
+  color: whitesmoke;
+}
+.footer p {
+  color: #c5c1c1;
+}
+.footer .social {
+  color: #c5c1c1;
+  font-size: 50px;
+  padding: 0 10px;
+}
+.footer .social:hover {
+  color: white;
+}
+.footer li a {
+  text-decoration: none;
+  color: #c5c1c1;
+}
+.footer li a:hover {
+  color: #fffefe;
+}
+
+/* VARIABLES */
+/* CATEGORÍAS */
+.categoria .card {
+  background: none;
+  border: none;
+}
+.categoria .card .card-header {
+  background: none;
+  border: none;
+}
+.categoria img {
+  transition: transform 0.3s;
+  border-radius: 20px;
+}
+.categoria img:hover {
+  transform: scale(1.03);
+}
+
+#accion {
+  background: #f2f2f2;
+  border-bottom: 1px solid #cccccc;
+}
+
+#terror {
+  background: #e6e6e6;
+  border-bottom: 1px solid #cccccc;
+}
+
+#ciencia_ficcion {
+  background: #f2f2f2;
+  border-bottom: 1px solid #cccccc;
+}
+
+#fantasia {
+  background: #e6e6e6;
+  border-bottom: 1px solid #cccccc;
+}
+
+.navegacion {
+  background-color: white;
+  border-bottom: 1px solid #cccccc;
+  padding: 5px;
+}
+.navegacion li a {
+  text-decoration: none;
+  color: #c5c1c1;
+  background-color: #333131;
+  border-radius: 10px;
+  margin: 5px 5px;
+}
+.navegacion li a:hover {
+  color: #fffefe;
 }
 
 /*# sourceMappingURL=styles.css.map */

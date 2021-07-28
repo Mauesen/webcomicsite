@@ -1,12 +1,13 @@
 @import '../utilities/mixins';
+@import '../utilities/variables';
 
 /* RANKING SEMANAL*/
 
 #ranking_semanal{
     
-    background-color: darken(white, 5%);
+    background-color: $bg-white-1;
 
-    border-bottom: 1px solid darken(white, 20%);
+    border-bottom: $border-section;
 
     .top-1{
 

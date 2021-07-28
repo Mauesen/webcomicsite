@@ -1,11 +1,12 @@
 @import '../utilities/mixins';
+@import '../utilities/variables';
 
 /* NOVEDADES */
 
 #novedades{
 
-    background-color: darken(white, 10%);
-    border-bottom: 1px solid darken(white, 20%);
+    background-color: $bg-white-2;
+    border-bottom: $border-section;
 
     .card{
 

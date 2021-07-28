@@ -1,11 +1,12 @@
 @import '../utilities/mixins';
+@import '../utilities/variables';
 
 /* RESEÑAS RECOMENDADAS*/
 
 #reseñas_recomendadas{
 
-    background-color: darken(white, 5%);
-    border-bottom: 1px solid darken(white, 20%);
+    background-color: $bg-white-1;
+    border-bottom: $border-section;
 
     img{
         border-radius: 20px;
