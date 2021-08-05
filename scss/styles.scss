@@ -1,6 +1,7 @@
 @import 'base/general';
-@import 'layouts/ranking_semanal';
-@import 'layouts/novedades';
-@import 'layouts/resenas_recomendadas';
-@import 'layouts/footer';
+@import 'sections/ranking_semanal';
+@import 'sections/novedades';
+@import 'sections/resenas_recomendadas';
+@import 'sections/footer';
 @import 'views/categorias';
+@import 'views/resena';

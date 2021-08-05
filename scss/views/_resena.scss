@@ -1,0 +1,30 @@
+/* PAGE RESEÑA */
+
+#reseña{
+
+    background: $bg-white-2;
+    padding: 0px ; 
+
+   
+
+    .container{
+
+        background: $bg-white-1;
+        border-left: $border-section;
+        border-right: $border-section;
+
+        padding: 15px;
+
+        h3{
+            margin: 0.5rem 0px;
+        }
+
+        img{
+            border-radius: 10px;
+        }
+       
+       
+
+    }
+
+}
