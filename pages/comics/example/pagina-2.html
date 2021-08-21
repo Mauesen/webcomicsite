@@ -4,6 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!--  Meta etiquetas / SEO -->
+    <!-- Tiene que tener entre 70 y 320 caracteres -->
+    <meta name="description" content="Sitio para leer comics de manera online y gratuita. Puedes valorar comics, leer reseñas y nuetras obras recomendadas.">
+
+    <!-- Keywords - tienem que estar separadas por comas / 15 -->
+    <meta name="keywords" content="comics online, leer comics gratis, comics online gratis, reseñas de comics, leer comics free, web comics, historietas online, historietas gratis, comic digital, historietas digitales">
+   
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../../../img/general/fav-ico.ico" type="image/x-icon">
+
+    <!-- Open graph -->
+    <meta property="og:title" content="Web Comic Site | Spiderman #1 pág 2">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <meta property="og:description" content="Sitio para leer comics de manera online y gratuita. Puedes valorar comics, leer reseñas y nuetras obras recomendadas.">
+    <meta property="og:locale" content="es_AR">
+
+
     <!-- Fonts -->
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -19,102 +37,118 @@
 
     <link rel="stylesheet" href="../../../css/bootstrap.min.css">
     
-    <title>Web Comic Site</title>
+    <title>Web Comic Site | Spiderman #1 pág 2</title>
 </head>
 <body>
 
-    <div class="">
+   
 
         <!-- Header -->
-        <header class="header bg-dark " >           
+        <header class="header bg-dark ">
 
             <!-- Header Interior-->
-            <div class="inner-header container">             
-            
+            <div class="inner-header container">
+
                 <!-- Nav-bar -->
 
                 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                    <a class="navbar-brand" href="#">WebComicSite</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
+
+                    <a class="navbar-brand" href="../../../index.html">
+
+                        <img src="../../../img/general/logo.png" class="d-inline-block align-top" alt="Logo WebComicSite">
+
+                    </a>
+
+                    <h1 class="navbar-brand">
+                        WebComicSite
+                    </h1>
+
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
                     </button>
-                  
+
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                      
+
                         <ul class="navbar-nav mr-auto">
-                        
-                            <li class="nav-item active">
-                          
+
+                            <li class="nav-item ">
+
                                 <a class="nav-link" href="../../../index.html">Inicio </a>
-                        
+
                             </li>
-                        
+
                             <li class="nav-item">
-                          
-                                <a class="nav-link" href="#">Ranking</a>
-                        
+
+                                <a class="nav-link" href="../../../index.html#novedades">Novedades</a>
+
                             </li>
-                        
+
                             <li class="nav-item">
-                            
+
                                 <a class="nav-link" href="../../../pages/categorias.html">Categorías</a>
-                        
+
                             </li>
-                            
+
                         </ul>
 
-                      <form class="form-inline my-2 my-lg-0">
+                        <form class="form-inline my-2 my-lg-0">
 
-                        <input class="form-control mr-sm-2" type="search" placeholder="Buscar..." aria-label="Search">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Buscar..."
+                                aria-label="Search">
 
-                        <button type="button" class="btn btn-outline-light my-2 my-sm-0 " data-toggle="modal" data-target="#loginModal">Iniciar Sesión</button> 
-                             
-                      </form>
+                            <button type="button" class="btn btn-outline-light my-2 my-sm-0 " data-toggle="modal"
+                                data-target="#loginModal">
+                                Iniciar Sesión
+                            </button>
+
+                        </form>
 
                     </div>
 
-                  </nav>
+                </nav>
 
-                <!-- Nav-bar --> 
+                <!-- Nav-bar -->
 
             </div>
             <!-- Header Interior-->
 
             <!-- Log in Modal -->
-            <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
 
                 <div class="modal-dialog modal-dialog-centered" role="document">
 
                     <div class="modal-content">
-                    
 
-                        <div style="position: relative;"> 
-                            <button type="button" style=" position: absolute; right: 0px;" class=" close " data-dismiss="modal" aria-label="Close">
+
+                        <div class="modal__header">
+                            <button type="button" class=" close " data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
-                            <img src="../img/slider.jpg" alt="" class="img-fluid">
-                            
+                            <img src="../../../img/general/modal.jpg" alt="Imagen Login" class="img-fluid">
+
                         </div>
 
                         <div class="modal-body">
 
-                            <div class="form-title text-center">
-                                <h4>Iniciar Sesión</h4>
-                            </div>
-
                             <div class="d-flex flex-column text-center">
-                                
+
                                 <form>
 
                                     <div class="form-group">
-                                        <input type="email" class="form-control" id="email1"placeholder="Ingresá tu correo...">
+                                        <input type="email" class="form-control" id="email1"
+                                            placeholder="Ingresá tu correo...">
                                     </div>
 
                                     <div class="form-group">
-                                        <input type="password" class="form-control" id="password1" placeholder="Ingresá tu contraseña...">
+                                        <input type="password" class="form-control" id="password1"
+                                            placeholder="Ingresá tu contraseña...">
                                     </div>
 
-                                    <button type="button" class="btn btn-dark btn-block btn-round">Iniciar Sesión</button>
+                                    <button type="button" class="btn btn-dark btn-block btn-round">Iniciar
+                                        Sesión</button>
 
                                 </form>
 
@@ -124,18 +158,22 @@
 
                         <div class="modal-footer d-flex justify-content-center">
 
-                            <div class="signup-section">No estás registrado/a? <a href="#a" class="text-info"> Registrate</a>.</div>
+                            <div class="signup-section">No estás registrado/a?
+                                <a href="../../registro.html" class="text-info">
+                                    Registrate
+                                </a>.
+                            </div>
 
                         </div>
 
                     </div>
 
-                </div>  
-            </div>  
+                </div>
+            </div>
             <!-- Log in Modal END -->
-            
-            
-            
+
+
+
         </header>
         <!-- Header -->
 
@@ -151,22 +189,22 @@
                     <ul class="nav justify-content-center">
                         
                         <li class="nav-item">
-                          <a class="nav-link " href="#accion"><i class="fas fa-arrow-alt-circle-left"></i></a>
+                          <a class="nav-link " href="pagina-1.html"><i class="fas fa-arrow-alt-circle-left"></i></a>
                         </li>
 
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Página 2</a>
                             <div class="dropdown-menu">
-                              <a class="dropdown-item" href="#">Página 1</a>
-                              <a class="dropdown-item" href="#">Página 3</a>
-                              <a class="dropdown-item" href="#">Página 4</a>
-                              <a class="dropdown-item" href="#">Página 5</a>
+                              <a class="dropdown-item" href="pagina-1.html">Página 1</a>
+                              <a class="dropdown-item" href="pagina-3.html">Página 3</a>
+                              <a class="dropdown-item" href="pagina-4.html">Página 4</a>
+                              <a class="dropdown-item" href="pagina-5.html">Página 5</a>
                                                       
                             </div>
                         </li>
 
                         <li class="nav-item">
-                          <a class="nav-link" href="#ciencia_ficcion"><i class="fas fa-arrow-alt-circle-right"></i></a>
+                          <a class="nav-link" href="pagina-3.html"><i class="fas fa-arrow-alt-circle-right"></i></a>
                         </li>
 
                         
@@ -185,11 +223,11 @@
             
             <!-- Sección Página -->
 
-            <section id="pagina" class="pb-3">
+            <section id="pagina" class="bg-white-1">
                 
-                <div class="container  text-center pt-3">
+                <div class="container  text-center ">
                     
-                    <img src="../../../img/comics/example/2.jpg" class="img-fluid" alt="">
+                    <img src="../../../img/comics/example/2.jpg" class="img-fluid" alt="Spiderman página 2">
                                            
                 </div>
                       
@@ -204,22 +242,22 @@
 
                     <ul class="nav justify-content-center">
                         <li class="nav-item">
-                          <a class="nav-link " href="#accion"><i class="fas fa-arrow-alt-circle-left"></i></a>
+                          <a class="nav-link " href="pagina-1.html"><i class="fas fa-arrow-alt-circle-left"></i></a>
                         </li>
                         
                         <li class="nav-item dropup">
                             <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Página 2</a>
                             <div class="dropdown-menu">
-                              <a class="dropdown-item" href="#">Página 1</a>
-                              <a class="dropdown-item" href="#">Página 3</a>
-                              <a class="dropdown-item" href="#">Página 4</a>
-                              <a class="dropdown-item" href="#">Página 5</a>
+                              <a class="dropdown-item" href="pagina-1.html">Página 1</a>
+                              <a class="dropdown-item" href="pagina-3.html">Página 3</a>
+                              <a class="dropdown-item" href="pagina-4.html">Página 4</a>
+                              <a class="dropdown-item" href="pagina-5.html">Página 5</a>
                                                       
                             </div>
                         </li>
 
                         <li class="nav-item">
-                          <a class="nav-link" href="#ciencia_ficcion"><i class="fas fa-arrow-alt-circle-right"></i></a>
+                          <a class="nav-link" href="pagina-3.html"><i class="fas fa-arrow-alt-circle-right"></i></a>
                         </li>
                         
                         
@@ -240,86 +278,95 @@
 
         <!-- Main END-->
 
-            <!-- Pie de Página -->
-   
-    <footer class="footer bg-dark pt-4 ">
+        <!-- Pie de Página -->
+        <footer class="footer bg-dark pt-4 ">
 
-        <!-- Footer Links -->
-        <div class="container text-center text-md-left">
+            <!-- Footer Links -->
+            <div class="container text-center text-md-left">
     
-            <!-- Grid row -->
-            <div class="row">
-        
-                <!-- Grid column -->
-                <div class="col-md-6 mt-md-0 mt-3">
-        
-                    <!-- Content -->
-                    <h6 class="text-uppercase ">Web Comics Site</h6>
-                    <p >Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
-        
-                </div>
-                <!-- Grid column -->
-        
-        
-                <!-- Grid column -->
-                <div class="col-md-3 mb-md-0 mb-3">
-        
-                    <!-- Links -->
-                    <h6 class="text-uppercase">Links útiles</h6>
-            
-                    <ul class="list-unstyled">
-                        <li>
-                        <a href="pages/categorias.html">Categorías</a>
-                        </li>
-                        <li>
-                        <a href="#!">Ranking</a>
-                        </li>
-                        <li>
-                        <a href="#!">Autores</a>
-                        </li>
-
-                    </ul>
-        
-                </div>
-                <!-- Grid column -->
-        
-                <!-- Grid column -->
-                <div class="col-md-3 mb-md-0 mb-3 ">
-        
-                    <!-- Links -->
-                    <h6 class="text-uppercase">Redes Sociales</h6>
-            
-
-                    <!-- Facebook -->
-                    <a href=""><i class="fab fa-facebook social ml-0 "></i></a>
-                   
-                    <!-- Twitter -->
-                  
-                    <a href=""><i class="fab fa-twitter social"></i></a>
-                                
-                    <!--Instagram-->
-
-                    <a href=""><i class="fab fa-instagram social"></i></a>
-                   
-                   
-                </div>
+                <!-- Grid row -->
+                <div class="row">
+    
                     <!-- Grid column -->
-        
+                    <div class="col-md-6 mt-md-0 mt-3">
+    
+                        <!-- Content -->
+                        <h6 class="text-uppercase ">Web Comics Site</h6>
+                        <p>
+                            Sitio de lectura comics de manera online y gratuita. Podés valorar comics, leer reseñas y nuetras
+                            obras recomendadas.
+                        </p>
+    
+                    </div>
+                    <!-- Grid column -->
+    
+    
+                    <!-- Grid column -->
+                    <div class="col-md-3 mb-md-0 mb-3">
+    
+                        <!-- Links -->
+                        <h6 class="text-uppercase">Links útiles</h6>
+    
+                        <ul class="list-unstyled">
+    
+                            <li>
+                                <a href="../../../pages/categorias.html">Categorías</a>
+                            </li>
+    
+                            <li>
+                                <a href="../../../index.html#ranking_semanal">Ranking</a>
+                            </li>
+    
+                            <li>
+                                <a href="../../../index.html#novedades">Novedades</a>
+                            </li>
+    
+                            <li>
+                                <a href="../../../index.html#reseñas_recomendadas">Reseñas</a>
+                            </li>
+                
+    
+                        </ul>
+    
+                    </div>
+                    <!-- Grid column -->
+    
+                    <!-- Grid column -->
+                    <div class="col-md-3 mb-md-0 mb-3 ">
+    
+                        <!-- Links -->
+                        <h6 class="text-uppercase">Redes Sociales</h6>
+    
+    
+                        <!-- Facebook -->
+                        <a href=""><i class="fab fa-facebook social ml-0 "></i></a>
+    
+                        <!-- Twitter -->
+    
+                        <a href=""><i class="fab fa-twitter social"></i></a>
+    
+                        <!--Instagram-->
+    
+                        <a href=""><i class="fab fa-instagram social"></i></a>
+    
+    
+                    </div>
+                    <!-- Grid column -->
+    
+                </div>
+                <!-- Grid row -->
+    
             </div>
-            <!-- Grid row -->
+            <!-- Footer Links -->
     
-        </div>
-        <!-- Footer Links -->
+            <!-- Copyright -->
+            <div class="footer-copyright text-center py-3 text-white">© 2021 WebComicSite </div>
     
-        <!-- Copyright -->
-        <div class="footer-copyright text-center py-3 text-white">© 2021 WebComicSite  </div>       
-        
-        <!-- Copyright -->
+            <!-- Copyright -->
     
-    </footer>
-    
-    <!-- Pie de Página END-->
-    </div>
+        </footer>
+        <!-- Pie de Página END-->
+
     
     <script src="../../../js/jquery-3.6.0.min.js"></script>
     <script src="../../../js/fa-all.min.js"></script>

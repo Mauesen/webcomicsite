@@ -53,6 +53,7 @@
 
     background-color: white;
     border-bottom: $border-section;
+    border-top: $border-section;
     padding: 5px;
 
     li{
@@ -72,6 +73,19 @@
 
             }
         }
+    }
+    .dropdown-item{
+
+        text-decoration: none;
+        color: rgb(51, 49, 49);
+
+        background-color: white;
+
+        border-radius: 0px;
+        margin: 0px;
+     
+
+
     }
 
 

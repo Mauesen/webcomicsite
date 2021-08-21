@@ -1,77 +1,63 @@
+/* PAGE COMIC VIEW */
 
-/* PAGE CATEGORÍAS */
+#comics_list {
 
-.categoria{
 
-    
+    background: $bg-white-2;
+    padding: 0px;
 
-    .card{
+    .container {
 
-        @include transparente;
 
-        .card-header{
+        background: $bg-white-1;
+        border-left: $border-section;
+        border-right: $border-section;
+        padding: 15px 15px 0 15px;
 
-            @include transparente;
-        }
-    }
-
-    img{
-
-        transition: transform .3s;
-        border-radius: 20px;
-
-        &:hover{
-
-            transform: scale(1.03);
-
+        .titulo{
+            
+            margin-bottom: 0px;
         }
 
-    }
-}
+        .comic_item {
 
-#accion{
-    background: $bg-white-1;
-    border-bottom: $border-section;
-}
 
-#terror{
-    background: $bg-white-2;
-    border-bottom: $border-section;
-}
+            padding: 10px 0;
 
-#ciencia_ficcion{
-    background: $bg-white-1;
-    border-bottom: $border-section;
-}
+            border-bottom: $border-section;
 
-#fantasia{
-    background: $bg-white-2;
-    border-bottom: $border-section;
-}
+            &:hover {
 
-.navegacion{
-
-    background-color: white;
-    border-bottom: $border-section;
-    padding: 5px;
-
-    li{
-
-        a{
-
-            text-decoration: none;
-            color: rgb(197, 193, 193);
-
-            background-color: rgb(51, 49, 49);
-            border-radius: 10px;
-            margin: 5px 5px;
-
-            &:hover{
-
-                color: rgb(255, 254, 254);
+                background-color: $bg-white-2;
 
             }
+
+            .card {
+
+                @include transparente;
+
+                .card-header {
+
+                    @include transparente;
+                }
+
+                img {
+
+                    transition: transform .3s;
+                    border-radius: 20px;
+
+                    &:hover {
+
+                        transform: scale(1.03);
+
+                    }
+
+                }
+            }
+
         }
+
+
     }
 
 

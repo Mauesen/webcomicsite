@@ -6,7 +6,14 @@
     margin: 0;
     padding: 0;
 
+    font-family: 'Rubik', sans-serif;
+
 }
+
+html {
+    scroll-behavior: smooth;
+}
+  
 
 section{
 
@@ -16,10 +23,11 @@ section{
 .titulo{
 
     color: $text-light;
-    padding: 5px;
+    padding: 7px;
     border-radius: 5px;
     text-align: center;
     background-color: $bg-dark;
+    font-size: 1.6em;
 }
 
 .center{
@@ -27,5 +35,34 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+.bg-white-1{
+
+    background-color: $bg-white-1;
+}
+
+.bg-white-2{
+
+    background-color: $bg-white-2;
+}
+
+nav{
+    h1{
+        margin-bottom: 0px;
+    }
+}
+
+.no-dec{
+    
+    color: black;
+
+    &:hover{
+
+        color: lighten(black,30%);
+        text-decoration: none;
+
+    }
 }
 
